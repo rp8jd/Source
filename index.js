@@ -14,17 +14,14 @@ app.get("/", (req, res) => {
   res.send("Hello, World!");
 });
 
-// similarly, we can send a file, like this adorable one of Mitch
 app.get("/ageofinnocence", (req, res) => {
   res.sendfile("ageofinnocence.txt");
 });
 
-// we can also send over a json
 app.get("/annakarenina", (req, res) => {
   res.sendfile("./annakarenina.txt");
 });
 
-// if you have any HTML files, you can send those over too
 app.get("/candide", (req, res) => {
   res.sendfile("./candide.txt");
 });
